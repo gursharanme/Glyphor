@@ -57,7 +57,7 @@ Aimed at elevating the designer's professional presence online, the project focu
 
 ## 🌐 Live Demo
 
-> [🔗 View Live Site](https://glyphordesigns.pages.dev/)
+> [🔗 View Live Site](https://ghyphor.gursharan.me/)
 
 ---
 
