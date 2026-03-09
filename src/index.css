@@ -1,0 +1,77 @@
+/* Import Google Font: Inter, Bebas Neue, Anton */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Import Tailwind */
+@import "tailwindcss";
+
+/* Custom Font: Integral CF */
+@font-face {
+  font-family: 'Integral CF';
+  src: url('/fonts/Fontspring-DEMO-integralcf-regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+/* Custom CSS Variables Theme */
+@theme {
+  --color-custom-blue: #0101ff;
+  --color-custom-white: #fefffe;
+  --color-custom-black: #000000;
+}
+
+/* Global Body Styles */
+body {
+  font-family: 'Integral CF', 'Inter', 'Bebas Neue', 'Anton', 'Arial Black', 'Segoe UI', 'Arial', sans-serif;
+  background-color: var(--color-custom-black);
+  color: var(--color-custom-white);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Fade-in Animation */
+@keyframes fadeInBlur {
+  from {
+    opacity: 0;
+    filter: blur(20px);
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInBlur 0.5s ease-in-out;
+}
+
+/* Slide-in Animations */
+@keyframes slideInFromUp {
+  from {
+    filter: blur(20px);
+    transform: translateY(-50%);
+  }
+  to {
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+
+.slide-in-from-up {
+  animation: slideInFromUp 1s cubic-bezier(0.05, 0.81, 0.37, 0.99);
+}
+
+@keyframes slideInFromDown {
+  from {
+    filter: blur(20px);
+    transform: translateY(150%);
+  }
+  to {
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+
+.slide-in-from-down {
+  animation: slideInFromDown 1s cubic-bezier(0.05, 0.81, 0.37, 0.99);
+}
